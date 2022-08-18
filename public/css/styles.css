@@ -19,7 +19,6 @@ Descripciones: 16px
 
 - ICONOS:
 https://fontawesome.com/icons?d=gallery&m=free
-
 */
 
 * {
@@ -35,11 +34,13 @@ body {
 
 h3 {
   font-size: 24px;
+  margin: 20px 0 35px 0;
 }
 
 p {
   font-size: 12px;
 }
+
 div.top-header {
   padding: 5%;
 }
@@ -49,14 +50,18 @@ header {
 }
 
 header div.logo {
-  width: 50%;
+  width: 200px;
 }
 
 header div.logo {
   padding: 10px;
 }
-header nav {
+.main-navbar {
   font-size: 12px;
+}
+.input,
+.submit {
+  display: inline;
 }
 
 header ul li {
@@ -73,7 +78,7 @@ header .form .input {
   border: 1px solid #000;
   outline: none;
   color: #666;
-  padding: 2px;
+  padding: 10px;
 }
 header .form .submit {
   background-color: #fff;
@@ -103,8 +108,29 @@ div.burger-menu i {
   width: 40px;
 }
 
+article {
+  margin-bottom: 10px;
+}
+.main-article {
+  position: relative;
+}
+/* article i {
+  border: 1px solid #39b54a;
+  padding: 5px;
+  border-radius: 50%;
+} */
+
 article div.main-article {
   width: 100%;
+}
+
+.main-article {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.products:last-child {
+  margin-bottom: 0px;
 }
 
 .price {
@@ -127,11 +153,33 @@ section.banner img {
 }
 
 main {
-  width: 90%;
+  width: 90vw;
+  margin: auto;
 }
-
 main section article {
   background-color: #fff;
+}
+
+.price-discount {
+  display: flex;
+  align-items: center;
+}
+.price {
+  margin-right: 10px;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
 }
 
 main section article img {
@@ -146,7 +194,7 @@ main section article i,
 footer {
   text-align: center;
   color: #666;
-  margin: 40px 20px 20px 20px;
+  padding: 20px;
 }
 
 footer section i {
@@ -162,4 +210,212 @@ footer section i {
 
 .copyright {
   text-align: left;
+}
+
+.description {
+  display: none;
+}
+
+.main-navbar {
+  display: none;
+  padding: 15px;
+}
+
+@media (max-width: 360px) {
+  .top-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header div.logo {
+    padding-right: 10px;
+    width: 50%;
+  }
+
+  .form {
+    display: flex;
+    height: 30px;
+    width: 50%;
+    align-items: center;
+  }
+  .input {
+    display: inline-block;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 95%;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  header .form .input,
+  header .form .submit {
+    display: flex;
+    border: none;
+    height: 100%;
+  }
+
+  header .form .submit {
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-radius: 0 5px 5px 0;
+  }
+  header .form .input {
+    font-size: 15px;
+  }
+}
+@media (min-width: 361px) {
+  article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .main-navbar {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  .price-discount {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    display: block;
+  }
+}
+.top-header {
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .form {
+    display: none;
+  } */
+  header div.top-header p {
+    max-width: 350px;
+    text-align: right;
+  }
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-navbar ul {
+    display: flex;
+  }
+  .main-navbar li {
+    margin: 0 5px;
+  }
+  div.top-header {
+    padding: 10px;
+  }
+  .products {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  header div.logo {
+    width: 250px;
+  }
+  .top-header,
+  .main-navbar {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  header div.top-header p {
+    max-width: none;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  /* .main-navbar {
+    margin-top: 35px;
+  } */
+
+  .main-navbar li {
+    margin: 0 10px;
+  }
+  .main-navbar a {
+    font-size: 19px;
+  }
+  .products {
+    flex-direction: row;
+    column-gap: 50px;
+  }
+
+  .form {
+    display: flex;
+    height: 40px;
+    width: 220%;
+  }
+  .input {
+    display: flex;
+    width: 95%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  header .form .input,
+  header .form .submit {
+    border: none;
+    height: 100%;
+    align-items: center;
+  }
+
+  header .form .submit {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+    border-radius: 0 5px 5px 0;
+  }
+  header .form .input {
+    padding: 10px;
+    font-size: 15px;
+  }
+  div.top-header {
+    padding: 5px 10px 10px 10px;
+  }
+  .main-navbar {
+    padding: 25px;
+    margin: auto;
+  }
+  .main-navbar a {
+    font-size: 13px;
+  }
+  header div.top-header p {
+    font-size: 13px;
+    text-align: center;
+    padding: 0 30px;
+  }
+  header div.logo {
+    width: 65%;
+    padding: 8px 12px 0 30px;
+  }
+  article {
+    box-shadow: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    background-color: white;
+  }
+  footer section {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-around;
+  }
+  .footer-details {
+    max-width: 500px;
+  }
+  .description {
+    display: none;
+  }
+  .price-discount {
+    margin: 0;
+  }
 }
