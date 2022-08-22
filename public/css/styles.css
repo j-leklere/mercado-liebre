@@ -34,7 +34,7 @@ body {
 
 h3 {
   font-size: 24px;
-  margin: 20px 0 35px 0;
+  margin: 20px 0;
 }
 
 p {
@@ -225,6 +225,7 @@ footer section i {
   .top-header {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   header div.logo {
@@ -257,14 +258,20 @@ footer section i {
   header .form .submit {
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 36px;
     border-radius: 0 5px 5px 0;
   }
   header .form .input {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 @media (min-width: 361px) {
+  .form {
+    width: 30%;
+  }
+  .logo {
+    width: 120%;
+  }
   article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
@@ -283,11 +290,136 @@ footer section i {
   .description {
     display: block;
   }
-}
-.top-header {
-  align-items: center;
+
+  .top-header {
+    align-items: center;
+  }
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header div.logo {
+    width: 250px;
+    padding: 0;
+  }
+  header div.top-header p {
+    max-width: 350px;
+    text-align: right;
+  }
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-navbar ul {
+    display: flex;
+  }
+  .main-navbar li {
+    margin: 0 5px;
+  }
+  div.top-header {
+    padding: 10px;
+  }
+  .top-header,
+  .main-navbar {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  header div.top-header p {
+    max-width: none;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .main-navbar li {
+    margin: 0 10px;
+  }
+  .main-navbar a {
+    font-size: 19px;
+  }
+  .form {
+    display: flex;
+    height: 40px;
+  }
+  .input {
+    display: flex;
+    width: 95%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  header .form .input,
+  header .form .submit {
+    border: none;
+    height: 100%;
+    align-items: center;
+  }
+
+  header .form .submit {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+    border-radius: 0 5px 5px 0;
+  }
+  header .form .input {
+    padding: 10px;
+    font-size: 15px;
+  }
+  div.top-header {
+    padding: 10px;
+  }
+  .main-navbar {
+    padding: 25px;
+    margin: auto;
+  }
+  .main-navbar a {
+    font-size: 13px;
+  }
+  header div.top-header p {
+    font-size: 13px;
+    padding: 0 30px;
+  }
+  header div.logo {
+    width: 65%;
+  }
+  .main-navbar li {
+    margin: 0;
+  }
+  .form {
+    width: 30%;
+  }
+  .input {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  header div.top-header p {
+    font-size: 13px;
+    padding: 0;
+  }
+  header .form .submit {
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    border-radius: 0 5px 5px 0;
+  }
 }
 @media (min-width: 768px) {
+  .form {
+    display: flex;
+    height: 40px;
+    width: 220%;
+  }
+  header div.logo {
+    width: 65%;
+    padding: 8px 12px 0 30px;
+  }
+  header div.top-header p {
+    padding: 0 30px;
+  }
   .top-header {
     display: flex;
     justify-content: space-between;
@@ -312,8 +444,40 @@ footer section i {
   div.top-header {
     padding: 10px;
   }
+  .last-visit {
+    display: flex;
+    flex-direction: column;
+  }
   .products {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 4rem;
+  }
+  article {
+    width: 45%;
+    margin: 0;
+  }
+  h3 {
+    margin: 30px 0;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    background-color: white;
+  }
+  footer section {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-around;
+  }
+  .footer-details {
+    max-width: 500px;
+  }
+  .logo {
+    min-width: 200px;
   }
 }
 
@@ -345,6 +509,10 @@ footer section i {
   .products {
     flex-direction: row;
     column-gap: 50px;
+    flex-wrap: nowrap;
+  }
+  article {
+    width: auto;
   }
 
   .form {
@@ -397,21 +565,7 @@ footer section i {
   article {
     box-shadow: none;
   }
-  footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 50px;
-    background-color: white;
-  }
-  footer section {
-    display: flex;
-    margin-bottom: 10px;
-    justify-content: space-around;
-  }
-  .footer-details {
-    max-width: 500px;
-  }
+
   .description {
     display: none;
   }
