@@ -84,6 +84,7 @@ header .form .input {
   border: 1px solid #000;
   outline: none;
   color: #666;
+  font-size: 12px;
   padding: 10px;
 }
 header .form .submit {
@@ -228,3 +229,7 @@ footer section i {
   display: none;
   padding: 15px;
 }
+
+/********************/
+/* SECTION REGISTER */
+/********************/
