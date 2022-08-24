@@ -204,6 +204,7 @@ footer {
   text-align: center;
   color: #666;
   padding: 20px;
+  background-color: #ffffffff;
 }
 
 footer section i {
@@ -229,7 +230,3 @@ footer section i {
   display: none;
   padding: 15px;
 }
-
-/********************/
-/* SECTION REGISTER */
-/********************/

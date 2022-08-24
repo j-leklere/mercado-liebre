@@ -4,11 +4,38 @@ body {
   flex-direction: column;
 }
 
-input {
-  display: block;
-  margin: auto;
+.login {
+  display: flex;
+  justify-content: center;
 }
 
+form input {
+  display: block;
+  margin: auto;
+  height: 35px;
+  width: 600px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+form a {
+  text-decoration: none;
+}
+
+form a input {
+  background-color: #0044aa;
+  color: #ffffffff;
+  transition: all 0.3s;
+}
+
+form a input:hover {
+  cursor: pointer;
+  background-color: #ffffffff;
+  color: #0044aa;
+  border: 1px solid #0044aa;
+}
 footer {
   justify-content: flex-end;
 }

@@ -4,15 +4,86 @@ body {
   flex-direction: column;
 }
 
-main {
+h4 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.register {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
 }
 
 input {
-  display: block;
   margin: auto;
+  margin-bottom: 25px;
+}
+
+.form-input {
+  display: block;
+  height: 35px;
+  width: 600px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-left: 20px;
+}
+
+.profile div {
+  display: flex;
+  gap: 30px;
+}
+
+.intereses {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.intereses div {
+  display: flex;
+  gap: 20px;
+}
+
+.file input {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 25px 0;
+}
+
+.submit-reset {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-reset input {
+  border-radius: 5px;
+  border: none;
+  height: 35px;
+  width: 49%;
+  color: #ffffffff;
+  background-color: #0044aa;
+}
+
+.submit-reset input:hover {
+  cursor: pointer;
+  background-color: #ffffffff;
+  color: #0044aa;
+  border: 1px solid #0044aa;
+  transition: all 0.3s;
 }
 
 footer {
   justify-content: flex-end;
+  margin-top: 0;
 }

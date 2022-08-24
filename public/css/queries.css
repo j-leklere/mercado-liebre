@@ -187,13 +187,14 @@
     background-color: white;
   }
   footer section {
-    display: flex;
     margin-bottom: 10px;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .footer-details {
+  /* .footer-details {
     max-width: 500px;
-  }
+  } */
 }
 
 /**********************/
@@ -266,5 +267,9 @@
   }
   .price-discount {
     margin: 0;
+  }
+
+  footer section {
+    flex-direction: row;
   }
 }
