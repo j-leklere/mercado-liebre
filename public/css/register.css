@@ -72,14 +72,14 @@ input {
   height: 35px;
   width: 49%;
   color: #ffffffff;
-  background-color: #0044aa;
+  background-color: #0022aa;
 }
 
 .submit-reset input:hover {
   cursor: pointer;
   background-color: #ffffffff;
-  color: #0044aa;
-  border: 1px solid #0044aa;
+  color: #0022aa;
+  border: 1px solid #0022aa;
   transition: all 0.3s;
 }
 

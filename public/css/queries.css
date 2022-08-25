@@ -254,16 +254,30 @@
   article {
     width: auto;
     box-shadow: none;
-    /* Preguntar sobre box shadow */
   }
   .products {
     flex-direction: row;
     column-gap: 50px;
     flex-wrap: nowrap;
   }
+  .products article {
+    transition: all 0.4s;
+  }
+  .products article i {
+    transition: transform 1s;
+  }
+  .products article:hover i {
+    transform: rotate(-90deg);
+  }
+  main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  main section article:hover .description {
+    display: block;
+    margin-top: 10px;
+  }
   .description {
     display: none;
-    /* Preguntar sobre descripcion */
   }
   .price-discount {
     margin: 0;
@@ -271,5 +285,12 @@
 
   footer section {
     flex-direction: row;
+  }
+  footer section i {
+    transition: color 450ms;
+  }
+  footer section i:hover {
+    color: #eac926;
+    /* color: #39b54a; */
   }
 }

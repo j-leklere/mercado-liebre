@@ -173,6 +173,14 @@ main section article {
   align-items: center;
 }
 
+.price {
+  width: 30%;
+}
+
+.discount {
+  width: 70%;
+}
+
 main section article i {
   display: block;
   font-size: 16px;
@@ -220,10 +228,6 @@ footer section i {
 
 .copyright {
   text-align: left;
-}
-
-.description {
-  display: none;
 }
 
 .main-navbar {
