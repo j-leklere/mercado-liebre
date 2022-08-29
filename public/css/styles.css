@@ -24,6 +24,10 @@ Descripciones: 16px
 https://fontawesome.com/icons?d=gallery&m=free
 */
 
+/******************/
+/* GENERAL STYLES */
+/******************/
+
 * {
   margin: 0px;
   padding: 0px;
@@ -35,10 +39,6 @@ body {
   background-color: #ebebeb;
 }
 
-/******************/
-/* SECTION HEADER */
-/******************/
-
 h3 {
   font-size: 24px;
   margin: 20px 0;
@@ -48,26 +48,74 @@ p {
   font-size: 12px;
 }
 
-div.top-header {
-  padding: 5%;
-}
+/******************/
+/* SECTION HEADER */
+/******************/
 
 header {
   background-color: #eac926;
 }
 
-header div.logo {
-  width: 200px;
+.top-header {
+  padding: 5%;
+  margin: auto;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.top-header p {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
   padding: 10px;
+}
+
+.form {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+.input {
+  height: 100%;
+  background-color: #fff;
+  outline: none;
+  color: #666;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.submit {
+  height: 100%;
+  background-color: #fff;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  border-radius: 0 5px 5px 0;
 }
 
 .main-navbar {
   font-size: 12px;
+  display: none;
+  margin: auto;
+  padding: 0 20px 20px;
+  max-width: 1400px;
 }
 
-.input,
-.submit {
-  display: inline;
+.main-navbar ul {
+  display: flex;
+  gap: 20px;
 }
 
 header ul li {
@@ -79,26 +127,6 @@ header ul li a {
   color: #000;
 }
 
-header .form .input {
-  background-color: #fff;
-  border: 1px solid #000;
-  outline: none;
-  color: #666;
-  font-size: 12px;
-  padding: 10px;
-}
-header .form .submit {
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #666;
-  width: 10%;
-}
-
-header div.top-header p {
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-}
 
 div.burger-menu {
   text-align: center;
@@ -118,39 +146,10 @@ div.burger-menu i {
 /****************/
 /* SECTION MAIN */
 /****************/
-article {
-  margin-bottom: 10px;
-}
-.main-article {
-  position: relative;
-}
 
-article div.main-article {
-  width: 100%;
-}
-
-.main-article {
-  border-top: 1px solid #ebebeb;
-  padding: 15px;
-}
-
-.products:last-child {
-  margin-bottom: 0px;
-}
-
-.price {
-  font-size: 18px;
-  margin-right: 10px;
-}
-
-.description {
-  display: none;
-}
-
-.discount,
-.description {
-  font-size: 16px;
-  font-weight: normal;
+main {
+  width: 90vw;
+  margin: auto;
 }
 
 h3,
@@ -158,32 +157,17 @@ h3,
   color: #666;
 }
 
-section.banner img {
-  width: 100%;
+.offers {
+  margin-bottom: 40px;
 }
 
-main {
-  width: 90vw;
-  margin: auto;
-}
-main section article {
+article {
   background-color: #fff;
+  box-shadow: none;
+  transition: all 0.6s;
 }
 
-.price-discount {
-  display: flex;
-  align-items: center;
-}
-
-.price {
-  width: 30%;
-}
-
-.discount {
-  width: 70%;
-}
-
-main section article i {
+article i {
   display: block;
   font-size: 16px;
   padding: 5px;
@@ -195,15 +179,64 @@ main section article i {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: all 0.6s;
 }
 
-main section article img {
+article img {
   width: 100%;
 }
 
-main section article i,
+article i,
 .discount {
   color: #39b54a;
+}
+
+article:hover i {
+  transform: rotate(-90deg);
+  /* animation: camion 5s infinite; */
+}
+
+article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article:hover .description {
+  visibility: visible;
+}
+
+.main-article {
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.price-discount {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  width: 30%;
+  font-size: 18px;
+}
+
+.discount {
+  width: 70%;
+  padding-left: 15px;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.description {
+  visibility: hidden;
 }
 
 /******************/
@@ -221,6 +254,11 @@ footer section i {
   color: #1259c3;
   font-size: 2em;
   margin-bottom: 10px;
+  transition: all 0.6s;
+}
+
+footer section i:hover {
+  color: #eac926;
 }
 
 .footer-details {
@@ -229,9 +267,4 @@ footer section i {
 
 .copyright {
   text-align: left;
-}
-
-.main-navbar {
-  display: none;
-  padding: 15px;
 }
