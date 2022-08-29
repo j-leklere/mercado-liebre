@@ -30,3 +30,7 @@ app.get("/login", (req, res) => {
   console.log("Te logeaste correctamente");
   res.redirect("/");
 });
+
+app.listen(process.env.PORT || 3000, function () {
+  console.log("Puerto funcionando en el 3030!");
+});
