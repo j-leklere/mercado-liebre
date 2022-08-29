@@ -71,11 +71,17 @@
     <!-- Inicio Main -->
     <main class="login">
       <form action="/" method="GET">
-        <input type="text" name="user" placeholder="Nombre de usuario" />
+        <input
+          type="text"
+          name="user"
+          placeholder="Nombre de usuario"
+          required
+        />
         <input
           type="password"
           name="password"
           placeholder="Elegí tu contraseña"
+          required
         />
         <a href="/"><input type="submit" value="Enviar" /></a>
       </form>

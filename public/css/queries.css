@@ -2,7 +2,7 @@
 /* QUERIE MAX(360px) */
 /*********************/
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .top-header {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +49,7 @@
 /*********************/
 
 @media (min-width: 361px) {
-  .main-navbar {
+  /* .main-navbar {
     display: flex;
     padding: 25px;
     justify-content: space-between;
@@ -61,16 +61,16 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-  }
-  header div.logo {
+  } */
+  /* header div.logo {
     padding: 0 10px 0 0;
     width: 65%;
-  }
-  header div.top-header p {
+  } */
+  /* header div.top-header p {
     text-align: right;
     font-weight: 400;
     padding: 0 20px 0 0;
-  }
+  } */
   .main-navbar ul {
     display: flex;
   }
@@ -130,7 +130,20 @@
 /* QUERIE MIN(768px) */
 /*********************/
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+  .main-navbar {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .top-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
   header div.logo {
     min-width: 200px;
     width: 65%;
@@ -195,6 +208,23 @@
   /* .footer-details {
     max-width: 500px;
   } */
+
+  /***********/
+  /* TESTING */
+  /***********/
+  article:nth-child(1) {
+    animation: articulo1 20s infinite;
+  }
+  article:nth-child(2) {
+    animation: articulo2 20s infinite;
+  }
+  article:nth-child(3) {
+    animation: articulo3 20s infinite;
+  }
+  article:nth-child(4) {
+    animation: articulo4 20s infinite;
+  }
+  /***********/
 }
 
 /**********************/
@@ -260,29 +290,28 @@
     column-gap: 50px;
     flex-wrap: nowrap;
   }
-  .products article {
+  /* .products article {
     transition: all 0.4s;
-  }
-  .products article i {
+  } */
+  /* .products article i {
     transition: transform 1s;
-  }
+  } */
   .products article:hover i {
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
+    animation: camion 5s infinite;
   }
   main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
   main section article:hover .description {
-    display: block;
-    margin-top: 10px;
+    visibility: visible;
   }
   .description {
-    display: none;
+    visibility: hidden;
   }
   .price-discount {
     margin: 0;
   }
-
   footer section {
     flex-direction: row;
   }
@@ -293,4 +322,80 @@
     color: #eac926;
     /* color: #39b54a; */
   }
+  /***********/
+  /* TESTING */
+  /***********/
+  article:nth-child(1) {
+    animation: none;
+  }
+  article:nth-child(2) {
+    animation: none;
+  }
+  article:nth-child(3) {
+    animation: none;
+  }
+  article:nth-child(4) {
+    animation: none;
+  }
+  /***********/
 }
+
+/***********/
+/* TESTING */
+/***********/
+
+/* @keyframes camion {
+  50% {
+    right: 86%;
+  }
+  100% {
+    right: 20px;
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes articulo1 {
+  25% {
+    transform: translateX(122%);
+  }
+  50% {
+    transform: translateY(111%) translateX(122%);
+  }
+  75% {
+    transform: translateY(111%);
+  }
+}
+@keyframes articulo2 {
+  25% {
+    transform: translateY(111%);
+  }
+  50% {
+    transform: translateY(111%) translateX(-122%);
+  }
+  75% {
+    transform: translateX(-122%);
+  }
+}
+@keyframes articulo3 {
+  25% {
+    transform: translateY(-111%);
+  }
+  50% {
+    transform: translateY(-111%) translateX(122%);
+  }
+  75% {
+    transform: translateX(122%);
+  }
+}
+@keyframes articulo4 {
+  25% {
+    transform: translateX(-122%);
+  }
+  50% {
+    transform: translateY(-111%) translateX(-122%);
+  }
+  75% {
+    transform: translateY(-111%);
+  }
+} */
+/***********/

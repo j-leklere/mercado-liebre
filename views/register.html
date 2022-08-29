@@ -79,6 +79,7 @@
             id="name"
             placeholder="Nombre y apellido"
             class="form-input"
+            required
           />
         </div>
         <div>
@@ -89,16 +90,18 @@
             id="user"
             placeholder="Nombre de usuario"
             class="form-input"
+            required
           />
         </div>
         <div>
           <label for="mail"></label>
           <input
-            type="text"
+            type="email"
             name="mail"
             id="mail"
             placeholder="E-mail"
             class="form-input"
+            required
           />
         </div>
 
@@ -106,7 +109,13 @@
 
         <div>
           <label for="date"></label>
-          <input type="date" name="date" id="date" class="form-input" />
+          <input
+            type="date"
+            name="date"
+            id="date"
+            class="form-input"
+            required
+          />
         </div>
         <div>
           <label for="adress"></label>
@@ -116,6 +125,7 @@
             id="adress"
             placeholder="Domicilio"
             class="form-input"
+            required
           />
         </div>
 
@@ -160,19 +170,21 @@
         <h4>Elegí tu foto de usuario</h4>
 
         <div class="file">
-          <input type="file" name="avatar" accept=".jpg" />
+          <input type="file" name="avatar" accept=".jpg" required />
         </div>
         <input
           type="password"
           name="pass"
           placeholder="Elegí tu contraseña"
           class="form-input"
+          required
         />
         <input
           type="password"
           name="passConfirm"
           placeholder="Confirmá tu contraseña"
           class="form-input"
+          required
         />
         <div class="submit-reset">
           <input type="submit" value="Enviar" />

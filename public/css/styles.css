@@ -10,7 +10,7 @@ Verde: #39b54a;
 
 - TIPOGRAFIAS:
 
-Roboto
+Familia: 'Roboto'
 
 - TAMAÑOS TIPOGRAFICOS:
 
@@ -118,11 +118,9 @@ div.burger-menu i {
 /****************/
 /* SECTION MAIN */
 /****************/
-
 article {
   margin-bottom: 10px;
 }
-
 .main-article {
   position: relative;
 }
@@ -143,6 +141,10 @@ article div.main-article {
 .price {
   font-size: 18px;
   margin-right: 10px;
+}
+
+.description {
+  display: none;
 }
 
 .discount,
@@ -223,7 +225,6 @@ footer section i {
 
 .footer-details {
   margin: 25px;
-  margin-bottom: 30px;
 }
 
 .copyright {
