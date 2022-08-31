@@ -83,6 +83,7 @@ header {
   height: 100%;
   background-color: #fff;
   outline: none;
+  border: none;
   color: #666;
   font-size: 12px;
   padding: 10px;
@@ -93,7 +94,6 @@ header {
   overflow: hidden;
   white-space: nowrap;
 }
-
 .submit {
   height: 100%;
   background-color: #fff;
@@ -103,6 +103,10 @@ header {
   justify-content: center;
   width: 36px;
   border-radius: 0 5px 5px 0;
+}
+
+.submit:hover{
+  cursor: pointer;
 }
 
 .main-navbar {
@@ -265,5 +269,6 @@ footer section i:hover {
 }
 
 .copyright {
+  margin-top: 10px;
   text-align: left;
 }

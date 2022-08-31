@@ -28,21 +28,29 @@
     <!-- Inicio Header -->
     <header>
       <div class="top-header">
+        <!-- Logo -->
         <div class="logo">
           <img
             src="images/logo-mercado-liebre.svg"
             alt="Logo de MercadoLiebre"
           />
         </div>
+        <!-- Búsqueda -->
         <div class="form" action="#" method="GET">
-          <div class="input">Buscar productos, marcas y más</div>
+          <input
+            class="input"
+            type="text"
+            placeholder="Buscar productos, marcas"
+          />
           <div class="submit"><i class="fa fa-search"></i></div>
         </div>
+        <!-- Título -->
         <p>
           <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
           de crédito
         </p>
       </div>
+      <!-- Navecación -->
       <nav class="main-navbar">
         <ul>
           <li><a href="#">Ofertas</a></li>
@@ -64,13 +72,16 @@
           </li>
         </ul>
       </nav>
+      <!-- Menú hamburguesa -->
       <div class="burger-menu">
         <i class="fa fa-bars burger"></i>
       </div>
     </header>
     <!-- Inicio Main -->
     <main class="register">
+      <!-- Formulario Register -->
       <form action="/" method="GET">
+        <!-- Nombre y apellido -->
         <div>
           <label for="name"></label>
           <input
@@ -82,6 +93,7 @@
             required
           />
         </div>
+        <!-- Usuario -->
         <div>
           <label for="user"></label>
           <input
@@ -93,6 +105,7 @@
             required
           />
         </div>
+        <!-- Mail -->
         <div>
           <label for="mail"></label>
           <input
@@ -107,6 +120,7 @@
 
         <h4>Fecha de nacimiento</h4>
 
+        <!-- Fecha de nacimiento -->
         <div>
           <label for="date"></label>
           <input
@@ -117,6 +131,7 @@
             required
           />
         </div>
+        <!-- Direccion -->
         <div>
           <label for="adress"></label>
           <input
@@ -131,9 +146,10 @@
 
         <h4>Perfil del usuario</h4>
 
+        <!-- Ocupacion -->
         <div class="profile">
           <div>
-            <input type="radio" name="profile" value="buyer" id="buyer"/>
+            <input type="radio" name="profile" value="buyer" id="buyer" />
             <label for="buyer">Comprador</label>
           </div>
           <div>
@@ -144,6 +160,7 @@
 
         <h4>Intereses</h4>
 
+        <!-- Intereses -->
         <div class="intereses">
           <div>
             <input type="checkbox" name="interests" value="1" id="1" />
@@ -169,9 +186,11 @@
 
         <h4>Elegí tu foto de usuario</h4>
 
+        <!-- Foto de perfil -->
         <div class="file">
           <input type="file" name="avatar" accept=".jpg" required />
         </div>
+        <!-- Contraseña -->
         <input
           type="password"
           name="pass"
@@ -179,6 +198,7 @@
           class="form-input"
           required
         />
+        <!-- Confirmar contraseña -->
         <input
           type="password"
           name="passConfirm"
@@ -186,6 +206,7 @@
           class="form-input"
           required
         />
+        <!-- Botones Enviar / Borrar -->
         <div class="submit-reset">
           <input type="submit" value="Enviar" />
           <input type="reset" value="Borrar" />
@@ -196,6 +217,7 @@
     <!-- Inicio Footer -->
     <footer>
       <section>
+        <!-- Primera parte del Footer -->
         <div class="footer-details">
           <i class="fa-solid fa-credit-card"></i>
           <p><strong>Pagá con tarjeta o en efectivo</strong></p>
@@ -204,7 +226,7 @@
             efectivo en puntos de pago. ¡Y siempre es seguro!
           </p>
         </div>
-
+        <!-- Segunda parte del Footer -->
         <div class="footer-details">
           <i class="fa-solid fa-gift"></i>
           <p><strong>Envío gratis desde $ 2.500</strong></p>
@@ -214,6 +236,7 @@
           </p>
         </div>
 
+        <!-- Tercer parte del Footer -->
         <div class="footer-details">
           <i class="fa-solid fa-user-shield"></i>
           <p><strong> Seguridad, de principio a fin</strong></p>
@@ -223,7 +246,7 @@
           </p>
         </div>
       </section>
-
+      <!-- Copyright -->
       <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
   </body>

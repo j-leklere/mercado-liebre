@@ -9,12 +9,13 @@ body {
   justify-content: center;
   padding: 10px;
 }
+
 form {
-  /* margin: 10px; */
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 form input {
   display: block;
   margin: auto;
