@@ -18,11 +18,12 @@ h4 {
   justify-content: center;
   margin: 25px auto;
 }
+
 form {
   width: 100%;
 }
 
-input {
+form input {
   margin: auto;
   margin-bottom: 25px;
 }
@@ -36,6 +37,7 @@ input {
   border: none;
   padding: 10px;
 }
+
 .profile,
 .intereses,
 .file {
@@ -43,6 +45,7 @@ input {
   max-width: 700px;
   margin: auto;
 }
+
 .profile {
   display: flex;
   justify-content: flex-start;
@@ -95,9 +98,4 @@ input {
   color: #0022aa;
   border: 1px solid #0022aa;
   transition: all 0.3s;
-}
-
-footer {
-  justify-content: flex-end;
-  margin-top: 0;
 }
