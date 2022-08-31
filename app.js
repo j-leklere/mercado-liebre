@@ -5,8 +5,8 @@ const app = express();
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
-app.listen(3030, () => {
-  console.log("Servidor corriendo en el puerto 3030");
+app.listen(3000, () => {
+  console.log("Servidor corriendo en el puerto 3000");
 });
 
 app.get("/", (req, res) => {
@@ -31,6 +31,6 @@ app.get("/login", (req, res) => {
   res.redirect("/");
 });
 
-// app.listen(process.env.PORT || 3030, function () {
-//   console.log("Puerto funcionando en el 3030!");
-// });
+app.listen(process.env.PORT || 3000, function () {
+  console.log("Puerto funcionando en el 3000!");
+});
