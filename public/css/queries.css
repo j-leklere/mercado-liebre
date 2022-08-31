@@ -67,6 +67,9 @@
   article {
     width: 45%;
   }
+  article:hover {
+    transform: translateY(-1.2rem);
+  }
   .products {
     display: flex;
     flex-wrap: wrap;
